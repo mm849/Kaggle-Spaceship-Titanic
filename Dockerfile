@@ -1,6 +1,9 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11-slim
 
+RUN apk update
+RUN apk add git
+
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
